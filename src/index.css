@@ -1,13 +1,70 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: sans-serif;
+  background: #41e1ba;
+  transition: background-color 300ms ease-int-out;
+  line-height: 1.5;
+}
+
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.working {
+  background: #EF5D50;
+}
+
+.hidden {
+  display: none;
+}
+
+.pomodro {
+  background: #fff;
+  margin: 50px 20px;
+  padding: 20px;
+  border-radius: 4px;
+box-shadow:  0 0 10px rgb(0, 0, 0, .5);
+}
+
+.pomodro h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.pomodro .timer {
+  font-size: 6rem;
+  text-align: center;
+}
+
+.pomodro .controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pomodro button {
+  background: #41e1ba;
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  color: #000;
+  transition:  background-color 300ms ease-in-out;
+  margin: 20px auto;
+}
+
+.working .pomodro button {
+  background: #EF5D50;
+  color: #000;
+}
+
+.pomodro .details {
+  margin: 20px 0;
 }
